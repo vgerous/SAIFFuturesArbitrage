@@ -7,8 +7,9 @@ The system aims to back test Futures arbitrage strategty for China commodity fut
 ## Design requirements:
 1. Data extraction and cleaning
   	- Extract historical market data for **all** products. (e.g. 橡胶，螺纹钢，铜，股指期货IC，IH，IF... etc)
-  	- The granularity of the market data should be least as finer as **minute-wise**. 
-  	- Market data cleaning must be done pior to algorithm implementation so that we'll have main contract market data align with that of the sub-main contract.         - Overall back testing cycle should be from the data of past **6** months.
+  	- The granularity of the market data should be at least as finer as **minute-wise**. 
+  	- Market data cleaning must be done pior to algorithm implementation so that we'll have main contract market data align with that of the sub-main contract.      
+  	- Overall back testing cycle should be from the data of past **6** months.
 2. Data processing algorithm
   	- Calculate the price gap between main contract and sub-main contract for each discrete point (**close price** for a certain minute) , denote the gap as priceDelta
   	- Calculate **MA** of priceDelta for past 20 units (minutes), denote as MA20
