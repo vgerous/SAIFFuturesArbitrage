@@ -1,8 +1,8 @@
 # SAIFFuturesArbitrage
-SAIF Futures Quantative Course I - Course Project - Futures Arbitrage
+SAIF Futures Quantitative Course I - Course Project - Futures Arbitrage
 
 ## Description
-The system aims to back test Futures arbitrage strategty for China commodity futures trading. Basic philosopy is to identify the price gap between main contract and sub-main contract.
+The system aims to back test Futures arbitrage strategty for China commodity futures trading. Basic philosophy is to identify the price gap between main contract and sub-main contract.
 
 ## Design requirements:
 1. Data extraction and cleaning
@@ -19,7 +19,7 @@ The system aims to back test Futures arbitrage strategty for China commodity fut
 	- Order shall be placed for current main contract
   	- Open buy when price hits the lower bound, and close sell when it regresses to middle.
   	- Open sell when price hits the upper bound and buy close when it regresses to middle. 
-4. Back testing statstics
-	- Based on the hehavior described in **3**, fiter out those don't follow the strategy which leaves the ones applicable for arbitraging.
+4. Back testing statistics
+	- Based on the behavior described in **3**, filter out those don't follow the strategy which leaves the ones applicable for arbitraging.
 	- Calculate the statistics, net value, sharpe ... etc(TBD)
 	- Generate the report (TBD)
